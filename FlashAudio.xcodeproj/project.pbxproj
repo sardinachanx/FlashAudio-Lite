@@ -1,0 +1,795 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D326AAC1D01081B004565CF /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D326AAB1D01081B004565CF /* Regex.swift */; };
+		1D326AAE1D013AFF004565CF /* DataPackets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D326AAD1D013AFF004565CF /* DataPackets.swift */; };
+		1D326AB01D01441C004565CF /* SendNewMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D326AAF1D01441C004565CF /* SendNewMessageController.swift */; };
+		1D326AB21D01B043004565CF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AB11D01B043004565CF /* Images.xcassets */; };
+		1D326AB91D01C0F4004565CF /* star-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AB51D01C0F4004565CF /* star-xxl.png */; };
+		1D326ABA1D01C0F4004565CF /* Personal.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AB61D01C0F4004565CF /* Personal.png */; };
+		1D326ABB1D01C0F4004565CF /* microphone-512 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AB71D01C0F4004565CF /* microphone-512 (1).png */; };
+		1D326ABC1D01C0F4004565CF /* chatbubble-outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AB81D01C0F4004565CF /* chatbubble-outline.png */; };
+		1D326AC01D037279004565CF /* DataEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D326ABF1D037279004565CF /* DataEncryption.swift */; };
+		1D326AF91D03B7AD004565CF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D326AF81D03B7AD004565CF /* User.swift */; };
+		1D326AFB1D03C901004565CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D326AFA1D03C901004565CF /* Main.storyboard */; };
+		1D3418A21CFB7C2200A36A5A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3418A01CFB7C2200A36A5A /* LoginController.swift */; };
+		1D3418A61CFB96DE00A36A5A /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3418A41CFB96DE00A36A5A /* MainMenuController.swift */; };
+		1D637DC81CEA3E6D006B325F /* AudioEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D637DC71CEA3E6D006B325F /* AudioEncryption.swift */; };
+		1D6BE0461CEBC9BA00B33642 /* !main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6BE0451CEBC9BA00B33642 /* !main.swift */; };
+		1DC753141CF23EC800F0ED58 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC753111CF23EC800F0ED58 /* libcrypto.a */; };
+		1DC753151CF23EC800F0ED58 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC753121CF23EC800F0ED58 /* libssl.a */; };
+		1DC753161CF23EC800F0ED58 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC753131CF23EC800F0ED58 /* libz.a */; };
+		1DCEFF5B1CF52FD400A3BAC0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCEFF5A1CF52FD400A3BAC0 /* DataManager.swift */; };
+		1DF9B45D1CE4EFFD00FC202F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9B45C1CE4EFFD00FC202F /* AppDelegate.swift */; };
+		1DF9B46D1CE4EFFD00FC202F /* FlashAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9B46C1CE4EFFD00FC202F /* FlashAudioTests.swift */; };
+		1DF9B4781CE4EFFD00FC202F /* FlashAudioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9B4771CE4EFFD00FC202F /* FlashAudioUITests.swift */; };
+		1DF9B4871CE4F02000FC202F /* AudioProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9B4861CE4F02000FC202F /* AudioProcessor.swift */; };
+		1DF9B4891CE64D5800FC202F /* SimpleAudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9B4881CE64D5800FC202F /* SimpleAudioTests.swift */; };
+		6BD8E7551D05AB6B00C6DE70 /* CurrentSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8E7541D05AB6B00C6DE70 /* CurrentSession.swift */; };
+		6BD8E7591D05ACA500C6DE70 /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD8E7581D05ACA500C6DE70 /* TimeFormatter.swift */; };
+		745DA143F2E1CC25609772F6 /* Pods_FlashAudioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70AED7C2DA8A97E038D07495 /* Pods_FlashAudioUITests.framework */; };
+		7C7F74E66B9536CE9278AAB5 /* Pods_FlashAudioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9658808B9EB52F8083E9B996 /* Pods_FlashAudioTests.framework */; };
+		F15B9FD125E3F456520DC271 /* Pods_FlashAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A502A7CA47A4298E10FA6C30 /* Pods_FlashAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DF9B4691CE4EFFD00FC202F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF9B4511CE4EFFD00FC202F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF9B4581CE4EFFD00FC202F;
+			remoteInfo = FlashAudio;
+		};
+		1DF9B4741CE4EFFD00FC202F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DF9B4511CE4EFFD00FC202F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DF9B4581CE4EFFD00FC202F;
+			remoteInfo = FlashAudio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B8A17160C6EC68F7B80B16 /* Pods-FlashAudioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudioTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests.release.xcconfig"; sourceTree = "<group>"; };
+		09DCF9B1F8EDB2BAAC65802F /* Pods-FlashAudioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudioUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudioUITests/Pods-FlashAudioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1D326AAB1D01081B004565CF /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		1D326AAD1D013AFF004565CF /* DataPackets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPackets.swift; sourceTree = "<group>"; };
+		1D326AAF1D01441C004565CF /* SendNewMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendNewMessageController.swift; sourceTree = "<group>"; };
+		1D326AB11D01B043004565CF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1D326AB51D01C0F4004565CF /* star-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-xxl.png"; sourceTree = "<group>"; };
+		1D326AB61D01C0F4004565CF /* Personal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Personal.png; sourceTree = "<group>"; };
+		1D326AB71D01C0F4004565CF /* microphone-512 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "microphone-512 (1).png"; sourceTree = "<group>"; };
+		1D326AB81D01C0F4004565CF /* chatbubble-outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chatbubble-outline.png"; sourceTree = "<group>"; };
+		1D326ABF1D037279004565CF /* DataEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataEncryption.swift; sourceTree = "<group>"; };
+		1D326AF81D03B7AD004565CF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1D326AFA1D03C901004565CF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D3418A01CFB7C2200A36A5A /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1D3418A41CFB96DE00A36A5A /* MainMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		1D637DC71CEA3E6D006B325F /* AudioEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEncryption.swift; sourceTree = "<group>"; };
+		1D6BE0451CEBC9BA00B33642 /* !main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "!main.swift"; sourceTree = "<group>"; };
+		1DC7530F1CF23EB100F0ED58 /* lib */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lib; path = openssl/lib; sourceTree = "<group>"; };
+		1DC753111CF23EC800F0ED58 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/lib/libcrypto.a; sourceTree = "<group>"; };
+		1DC753121CF23EC800F0ED58 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = openssl/lib/libssl.a; sourceTree = "<group>"; };
+		1DC753131CF23EC800F0ED58 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = openssl/lib/libz.a; sourceTree = "<group>"; };
+		1DC753171CF23F8000F0ED58 /* OpenSSLBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OpenSSLBridge.h; path = FlashAudio/OpenSSLBridge.h; sourceTree = "<group>"; };
+		1DCEFF5A1CF52FD400A3BAC0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1DF9B4591CE4EFFD00FC202F /* FlashAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF9B45C1CE4EFFD00FC202F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DF9B4631CE4EFFD00FC202F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF9B4681CE4EFFD00FC202F /* FlashAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF9B46C1CE4EFFD00FC202F /* FlashAudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashAudioTests.swift; sourceTree = "<group>"; };
+		1DF9B46E1CE4EFFD00FC202F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF9B4731CE4EFFD00FC202F /* FlashAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF9B4771CE4EFFD00FC202F /* FlashAudioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashAudioUITests.swift; sourceTree = "<group>"; };
+		1DF9B4791CE4EFFD00FC202F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DF9B4861CE4F02000FC202F /* AudioProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioProcessor.swift; sourceTree = "<group>"; };
+		1DF9B4881CE64D5800FC202F /* SimpleAudioTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAudioTests.swift; sourceTree = "<group>"; };
+		26209B3F40EE6F091D3DA660 /* Pods-FlashAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudio/Pods-FlashAudio.debug.xcconfig"; sourceTree = "<group>"; };
+		289FE2ECABBE9C1BEFA16CCC /* Pods-FlashAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudio.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudio/Pods-FlashAudio.release.xcconfig"; sourceTree = "<group>"; };
+		585473A0CF3B693B554E5CF3 /* Pods-FlashAudioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudioUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudioUITests/Pods-FlashAudioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6BD8E7541D05AB6B00C6DE70 /* CurrentSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentSession.swift; sourceTree = "<group>"; };
+		6BD8E7581D05ACA500C6DE70 /* TimeFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		70AED7C2DA8A97E038D07495 /* Pods_FlashAudioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81808EC84D3C5B80FE75AE9E /* Pods-FlashAudioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlashAudioTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9658808B9EB52F8083E9B996 /* Pods_FlashAudioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A502A7CA47A4298E10FA6C30 /* Pods_FlashAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DF9B4561CE4EFFD00FC202F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DC753141CF23EC800F0ED58 /* libcrypto.a in Frameworks */,
+				1DC753151CF23EC800F0ED58 /* libssl.a in Frameworks */,
+				1DC753161CF23EC800F0ED58 /* libz.a in Frameworks */,
+				F15B9FD125E3F456520DC271 /* Pods_FlashAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B4651CE4EFFD00FC202F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C7F74E66B9536CE9278AAB5 /* Pods_FlashAudioTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B4701CE4EFFD00FC202F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				745DA143F2E1CC25609772F6 /* Pods_FlashAudioUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C2975F95B9A48984A2968B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26209B3F40EE6F091D3DA660 /* Pods-FlashAudio.debug.xcconfig */,
+				289FE2ECABBE9C1BEFA16CCC /* Pods-FlashAudio.release.xcconfig */,
+				81808EC84D3C5B80FE75AE9E /* Pods-FlashAudioTests.debug.xcconfig */,
+				05B8A17160C6EC68F7B80B16 /* Pods-FlashAudioTests.release.xcconfig */,
+				585473A0CF3B693B554E5CF3 /* Pods-FlashAudioUITests.debug.xcconfig */,
+				09DCF9B1F8EDB2BAAC65802F /* Pods-FlashAudioUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D326AAA1D0106F6004565CF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1D326AAB1D01081B004565CF /* Regex.swift */,
+				1D326AAD1D013AFF004565CF /* DataPackets.swift */,
+				6BD8E7581D05ACA500C6DE70 /* TimeFormatter.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1D34189D1CFB7BEF00A36A5A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1D3418A01CFB7C2200A36A5A /* LoginController.swift */,
+				1D3418A41CFB96DE00A36A5A /* MainMenuController.swift */,
+				1D326AAF1D01441C004565CF /* SendNewMessageController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		1DCEFF571CF52D5800A3BAC0 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				1DCEFF5A1CF52FD400A3BAC0 /* DataManager.swift */,
+				1D326ABF1D037279004565CF /* DataEncryption.swift */,
+				1D326AF81D03B7AD004565CF /* User.swift */,
+				6BD8E7541D05AB6B00C6DE70 /* CurrentSession.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		1DF9B4501CE4EFFD00FC202F = {
+			isa = PBXGroup;
+			children = (
+				1DC753171CF23F8000F0ED58 /* OpenSSLBridge.h */,
+				1DC753111CF23EC800F0ED58 /* libcrypto.a */,
+				1DC753121CF23EC800F0ED58 /* libssl.a */,
+				1DC753131CF23EC800F0ED58 /* libz.a */,
+				1DC7530F1CF23EB100F0ED58 /* lib */,
+				1DF9B45B1CE4EFFD00FC202F /* FlashAudio */,
+				1DF9B46B1CE4EFFD00FC202F /* FlashAudioTests */,
+				1DF9B4761CE4EFFD00FC202F /* FlashAudioUITests */,
+				1DF9B45A1CE4EFFD00FC202F /* Products */,
+				1C2975F95B9A48984A2968B4 /* Pods */,
+				4BE873359123E196993D9D6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1DF9B45A1CE4EFFD00FC202F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DF9B4591CE4EFFD00FC202F /* FlashAudio.app */,
+				1DF9B4681CE4EFFD00FC202F /* FlashAudioTests.xctest */,
+				1DF9B4731CE4EFFD00FC202F /* FlashAudioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DF9B45B1CE4EFFD00FC202F /* FlashAudio */ = {
+			isa = PBXGroup;
+			children = (
+				1D326AFA1D03C901004565CF /* Main.storyboard */,
+				1D326AAA1D0106F6004565CF /* Helpers */,
+				1D34189D1CFB7BEF00A36A5A /* UI */,
+				1DCEFF571CF52D5800A3BAC0 /* Networking */,
+				1DF9B45C1CE4EFFD00FC202F /* AppDelegate.swift */,
+				1DF9B4851CE4F00C00FC202F /* AudioProcessing */,
+				1DF9B4631CE4EFFD00FC202F /* Info.plist */,
+				1D6BE0451CEBC9BA00B33642 /* !main.swift */,
+				1D326AB51D01C0F4004565CF /* star-xxl.png */,
+				1D326AB61D01C0F4004565CF /* Personal.png */,
+				1D326AB71D01C0F4004565CF /* microphone-512 (1).png */,
+				1D326AB81D01C0F4004565CF /* chatbubble-outline.png */,
+				1D326AB11D01B043004565CF /* Images.xcassets */,
+			);
+			path = FlashAudio;
+			sourceTree = "<group>";
+		};
+		1DF9B46B1CE4EFFD00FC202F /* FlashAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DF9B46C1CE4EFFD00FC202F /* FlashAudioTests.swift */,
+				1DF9B4881CE64D5800FC202F /* SimpleAudioTests.swift */,
+				1DF9B46E1CE4EFFD00FC202F /* Info.plist */,
+			);
+			path = FlashAudioTests;
+			sourceTree = "<group>";
+		};
+		1DF9B4761CE4EFFD00FC202F /* FlashAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DF9B4771CE4EFFD00FC202F /* FlashAudioUITests.swift */,
+				1DF9B4791CE4EFFD00FC202F /* Info.plist */,
+			);
+			path = FlashAudioUITests;
+			sourceTree = "<group>";
+		};
+		1DF9B4851CE4F00C00FC202F /* AudioProcessing */ = {
+			isa = PBXGroup;
+			children = (
+				1DF9B4861CE4F02000FC202F /* AudioProcessor.swift */,
+				1D637DC71CEA3E6D006B325F /* AudioEncryption.swift */,
+			);
+			name = AudioProcessing;
+			sourceTree = "<group>";
+		};
+		4BE873359123E196993D9D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A502A7CA47A4298E10FA6C30 /* Pods_FlashAudio.framework */,
+				9658808B9EB52F8083E9B996 /* Pods_FlashAudioTests.framework */,
+				70AED7C2DA8A97E038D07495 /* Pods_FlashAudioUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DF9B4581CE4EFFD00FC202F /* FlashAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF9B47C1CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudio" */;
+			buildPhases = (
+				B5D5B73C8878D7242C79399C /* 📦 Check Pods Manifest.lock */,
+				1DF9B4551CE4EFFD00FC202F /* Sources */,
+				1DF9B4561CE4EFFD00FC202F /* Frameworks */,
+				1DF9B4571CE4EFFD00FC202F /* Resources */,
+				1756A8F3091D46FE86884587 /* 📦 Embed Pods Frameworks */,
+				BF62BEC0D2B7E4B5455A8F43 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashAudio;
+			productName = FlashAudio;
+			productReference = 1DF9B4591CE4EFFD00FC202F /* FlashAudio.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DF9B4671CE4EFFD00FC202F /* FlashAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF9B47F1CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudioTests" */;
+			buildPhases = (
+				36587AA4799E308A6579111E /* 📦 Check Pods Manifest.lock */,
+				1DF9B4641CE4EFFD00FC202F /* Sources */,
+				1DF9B4651CE4EFFD00FC202F /* Frameworks */,
+				1DF9B4661CE4EFFD00FC202F /* Resources */,
+				43729C0CE4B12A03E2A12D3C /* 📦 Embed Pods Frameworks */,
+				25EE08F49A1E2D7EF89766F2 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DF9B46A1CE4EFFD00FC202F /* PBXTargetDependency */,
+			);
+			name = FlashAudioTests;
+			productName = FlashAudioTests;
+			productReference = 1DF9B4681CE4EFFD00FC202F /* FlashAudioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1DF9B4721CE4EFFD00FC202F /* FlashAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DF9B4821CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudioUITests" */;
+			buildPhases = (
+				A1B9548BED9A09800ADF429D /* 📦 Check Pods Manifest.lock */,
+				1DF9B46F1CE4EFFD00FC202F /* Sources */,
+				1DF9B4701CE4EFFD00FC202F /* Frameworks */,
+				1DF9B4711CE4EFFD00FC202F /* Resources */,
+				F1F58257A2D5DDF2F55A53EC /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DF9B4751CE4EFFD00FC202F /* PBXTargetDependency */,
+			);
+			name = FlashAudioUITests;
+			productName = FlashAudioUITests;
+			productReference = 1DF9B4731CE4EFFD00FC202F /* FlashAudioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DF9B4511CE4EFFD00FC202F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Serena Chan";
+				TargetAttributes = {
+					1DF9B4581CE4EFFD00FC202F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					1DF9B4671CE4EFFD00FC202F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1DF9B4581CE4EFFD00FC202F;
+					};
+					1DF9B4721CE4EFFD00FC202F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1DF9B4581CE4EFFD00FC202F;
+					};
+				};
+			};
+			buildConfigurationList = 1DF9B4541CE4EFFD00FC202F /* Build configuration list for PBXProject "FlashAudio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DF9B4501CE4EFFD00FC202F;
+			productRefGroup = 1DF9B45A1CE4EFFD00FC202F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DF9B4581CE4EFFD00FC202F /* FlashAudio */,
+				1DF9B4671CE4EFFD00FC202F /* FlashAudioTests */,
+				1DF9B4721CE4EFFD00FC202F /* FlashAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DF9B4571CE4EFFD00FC202F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D326AB91D01C0F4004565CF /* star-xxl.png in Resources */,
+				1D326AB21D01B043004565CF /* Images.xcassets in Resources */,
+				1D326ABB1D01C0F4004565CF /* microphone-512 (1).png in Resources */,
+				1D326AFB1D03C901004565CF /* Main.storyboard in Resources */,
+				1D326ABC1D01C0F4004565CF /* chatbubble-outline.png in Resources */,
+				1D326ABA1D01C0F4004565CF /* Personal.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B4661CE4EFFD00FC202F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B4711CE4EFFD00FC202F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1756A8F3091D46FE86884587 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashAudio/Pods-FlashAudio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25EE08F49A1E2D7EF89766F2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36587AA4799E308A6579111E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43729C0CE4B12A03E2A12D3C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1B9548BED9A09800ADF429D /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B5D5B73C8878D7242C79399C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF62BEC0D2B7E4B5455A8F43 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashAudio/Pods-FlashAudio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1F58257A2D5DDF2F55A53EC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlashAudioUITests/Pods-FlashAudioUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DF9B4551CE4EFFD00FC202F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF9B45D1CE4EFFD00FC202F /* AppDelegate.swift in Sources */,
+				1D326AAC1D01081B004565CF /* Regex.swift in Sources */,
+				1D3418A21CFB7C2200A36A5A /* LoginController.swift in Sources */,
+				1D326AAE1D013AFF004565CF /* DataPackets.swift in Sources */,
+				6BD8E7551D05AB6B00C6DE70 /* CurrentSession.swift in Sources */,
+				1D326AC01D037279004565CF /* DataEncryption.swift in Sources */,
+				1D637DC81CEA3E6D006B325F /* AudioEncryption.swift in Sources */,
+				1D6BE0461CEBC9BA00B33642 /* !main.swift in Sources */,
+				1DCEFF5B1CF52FD400A3BAC0 /* DataManager.swift in Sources */,
+				1D326AF91D03B7AD004565CF /* User.swift in Sources */,
+				1D3418A61CFB96DE00A36A5A /* MainMenuController.swift in Sources */,
+				1D326AB01D01441C004565CF /* SendNewMessageController.swift in Sources */,
+				6BD8E7591D05ACA500C6DE70 /* TimeFormatter.swift in Sources */,
+				1DF9B4871CE4F02000FC202F /* AudioProcessor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B4641CE4EFFD00FC202F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF9B4891CE64D5800FC202F /* SimpleAudioTests.swift in Sources */,
+				1DF9B46D1CE4EFFD00FC202F /* FlashAudioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DF9B46F1CE4EFFD00FC202F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF9B4781CE4EFFD00FC202F /* FlashAudioUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DF9B46A1CE4EFFD00FC202F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF9B4581CE4EFFD00FC202F /* FlashAudio */;
+			targetProxy = 1DF9B4691CE4EFFD00FC202F /* PBXContainerItemProxy */;
+		};
+		1DF9B4751CE4EFFD00FC202F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DF9B4581CE4EFFD00FC202F /* FlashAudio */;
+			targetProxy = 1DF9B4741CE4EFFD00FC202F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DF9B47A1CE4EFFD00FC202F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1DF9B47B1CE4EFFD00FC202F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1DF9B47D1CE4EFFD00FC202F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26209B3F40EE6F091D3DA660 /* Pods-FlashAudio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = openssl/include;
+				INFOPLIST_FILE = FlashAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FlashAudio/OpenSSLBridge.h;
+			};
+			name = Debug;
+		};
+		1DF9B47E1CE4EFFD00FC202F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 289FE2ECABBE9C1BEFA16CCC /* Pods-FlashAudio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = openssl/include;
+				INFOPLIST_FILE = FlashAudio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/openssl/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FlashAudio/OpenSSLBridge.h;
+			};
+			name = Release;
+		};
+		1DF9B4801CE4EFFD00FC202F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81808EC84D3C5B80FE75AE9E /* Pods-FlashAudioTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlashAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashAudio.app/Contents/MacOS/FlashAudio";
+			};
+			name = Debug;
+		};
+		1DF9B4811CE4EFFD00FC202F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05B8A17160C6EC68F7B80B16 /* Pods-FlashAudioTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlashAudioTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlashAudio.app/Contents/MacOS/FlashAudio";
+			};
+			name = Release;
+		};
+		1DF9B4831CE4EFFD00FC202F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585473A0CF3B693B554E5CF3 /* Pods-FlashAudioUITests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlashAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlashAudio;
+			};
+			name = Debug;
+		};
+		1DF9B4841CE4EFFD00FC202F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DCF9B1F8EDB2BAAC65802F /* Pods-FlashAudioUITests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FlashAudioUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.piedmontsardinia.FlashAudioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FlashAudio;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DF9B4541CE4EFFD00FC202F /* Build configuration list for PBXProject "FlashAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF9B47A1CE4EFFD00FC202F /* Debug */,
+				1DF9B47B1CE4EFFD00FC202F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF9B47C1CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF9B47D1CE4EFFD00FC202F /* Debug */,
+				1DF9B47E1CE4EFFD00FC202F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF9B47F1CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF9B4801CE4EFFD00FC202F /* Debug */,
+				1DF9B4811CE4EFFD00FC202F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DF9B4821CE4EFFD00FC202F /* Build configuration list for PBXNativeTarget "FlashAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DF9B4831CE4EFFD00FC202F /* Debug */,
+				1DF9B4841CE4EFFD00FC202F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1DF9B4511CE4EFFD00FC202F /* Project object */;
+}

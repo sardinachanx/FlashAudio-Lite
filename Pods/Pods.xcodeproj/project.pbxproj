@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01637C09A82536FA7D43230152063BAC /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = F075872CF858C5191C34635AB5031B4A /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0499F99FA631186EA0A1B40CAFF125CD /* FirebaseOSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42D7644D630F09BE0769C55711B030BC /* FirebaseOSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10C89674A09272752A1D2FCFB1136129 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE02E947314372F3C106012F1393936 /* Empty.m */; };
+		1B20468A9640A1C3B3146A16A0EAB8A3 /* Pods-FlashAudioUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8D78B21F0FA15E075C29AA2718BF735 /* Pods-FlashAudioUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D826FDE8C54B38573E759145CF495CF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */; };
+		434E206388D6BE912E21305BF27F8634 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68E47086D8934C5DCD530C6BB016D268 /* SystemConfiguration.framework */; };
+		4EA8C0EE1C9ECBD68CC35E9BBFB081CE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4612135DD50E8513C3015931B93811D0 /* Security.framework */; };
+		56675F1B46B9773698A587E8B61E4438 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 03777DBF5F1D0E3C9C2CEC2D93244B10 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58F410D23A9D5AD0BA112738D6F7C7E1 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = C6FBE928979923E303E8F7D023BEB4EC /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5BAB8364CEE2D5971EAA62C2AB80C369 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = DFF8EADE5B440E456DE3FA1105682A5F /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CC52B2C8DB35026CF9553DE317689FF /* Pods-FlashAudio-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E96BEEC5EAD617364BE1C23D26750389 /* Pods-FlashAudio-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EBB32437991D0FF0F83C8146241A9EC /* Pods-FlashAudioTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4003A3E54819395DF2DF0F113BF6930D /* Pods-FlashAudioTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80CDDF7906D1F45CF1FBB1608BE61330 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C310DA07751A175B3DC13D353BA406A2 /* CFNetwork.framework */; };
+		814A11F33FEED54FEC78D27F6D465471 /* Pods-FlashAudio-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C83DD49F195A79B88C586113F6C86788 /* Pods-FlashAudio-dummy.m */; };
+		81BD111833EC11EC163B2A8147EE3DC3 /* FirebaseOSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FF0E736828CABE79913DBF8ACBCD0A /* FirebaseOSX-dummy.m */; };
+		84548F98A8A507CDC0087C9CB0F060B5 /* Pods-FlashAudioUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E35B04730A04A65888F2292A9DD6A98A /* Pods-FlashAudioUITests-dummy.m */; };
+		8B0D34CBD9780A35838334D01794D252 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */; };
+		90205B391F8F1FE5D3A7D24129F5C3BA /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D50288E14575A1501D531A954C7B9FC /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9167933871030CE37A70E07CD6449DBE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */; };
+		A6135584C2693A8E5C873DF562EE354F /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E6FD5B5E3525B30F3C0BCA4863EC0A /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8861244CE6E7AC8EB2E0EBE7BA8E856 /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE3BA340105B7F8A4A68FA45BE69E37 /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA03D827681FE78C8E8F2DBDDDEC9733 /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = A00C81245F8ACA49170ADFE404A0B83B /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5752F5D14F43E06854A45FCE0AD1141 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 914BB983BEBDE6B4665A111BAB12F3D5 /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CCADE0EB76DA35A5A140A68DC5AA5A21 /* Pods-FlashAudioTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 397C00998938AD3E46C7866CF8FDA7F5 /* Pods-FlashAudioTests-dummy.m */; };
+		DDF7F17F6A80835F4AE19C5EAE543204 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B9FFFFA1E73B073DF66C6878B6FC9C /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD69D49FEB4824BBB8C4B63547B3574 /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FBE86DF76A4926D70863695EC7BB5A /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F406441A6457E6C74DA2396E6DAE4E7D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C0B1722A44A67BC44D27FE2381B2A54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557CE3709EC2652DDC12B7A49558A43B;
+			remoteInfo = FirebaseOSX;
+		};
+		78FBE97B9BDB5844E0CD279B5F5B08CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557CE3709EC2652DDC12B7A49558A43B;
+			remoteInfo = FirebaseOSX;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03777DBF5F1D0E3C9C2CEC2D93244B10 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		16FE6208CA6E8887646193AAE5C7B39F /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B53476A77DC151E3DEBCB52160F8F64 /* Pods-FlashAudio.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlashAudio.modulemap"; sourceTree = "<group>"; };
+		1D50288E14575A1501D531A954C7B9FC /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
+		20B90A0422BF40DAD31B5222A0354A24 /* Pods-FlashAudioUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlashAudioUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		20E2DBAABE6BC09CD42671F3A9E80946 /* FirebaseOSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FirebaseOSX.modulemap; sourceTree = "<group>"; };
+		25F5A75DC19EBA3D0FA9D94057841058 /* Pods-FlashAudio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudio.debug.xcconfig"; sourceTree = "<group>"; };
+		2D9F0016E2B048266DD534B88DAA2E42 /* Pods-FlashAudioTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudioTests-resources.sh"; sourceTree = "<group>"; };
+		35DA032B53ABC69355942C31260FAE9B /* Pods-FlashAudioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudioUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35FF0E736828CABE79913DBF8ACBCD0A /* FirebaseOSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FirebaseOSX-dummy.m"; sourceTree = "<group>"; };
+		36B9FFFFA1E73B073DF66C6878B6FC9C /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
+		397C00998938AD3E46C7866CF8FDA7F5 /* Pods-FlashAudioTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlashAudioTests-dummy.m"; sourceTree = "<group>"; };
+		3C47CF4167F497A7426B0E58BD4BBE79 /* Pods-FlashAudioUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlashAudioUITests.modulemap"; sourceTree = "<group>"; };
+		3ED31886AD3E99FF396230D44084A50F /* Pods-FlashAudioUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlashAudioUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4003A3E54819395DF2DF0F113BF6930D /* Pods-FlashAudioTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlashAudioTests-umbrella.h"; sourceTree = "<group>"; };
+		42D7644D630F09BE0769C55711B030BC /* FirebaseOSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseOSX-umbrella.h"; sourceTree = "<group>"; };
+		45FBE86DF76A4926D70863695EC7BB5A /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
+		4612135DD50E8513C3015931B93811D0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		4E0EFD434F187BC43DA637B354306117 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EDD6752B7DC363524DEF6DBE29B68B6 /* Pods-FlashAudio-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudio-frameworks.sh"; sourceTree = "<group>"; };
+		514EBC2275A4AF72F8392BB543EC8904 /* Pods_FlashAudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E392062216328CF7BD038B0F18B6C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68E47086D8934C5DCD530C6BB016D268 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		75699652A60444FA6F90560EA71B1901 /* Pods-FlashAudioUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudioUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E3570D39D314C248B36CFAAABB4D524 /* Pods_FlashAudioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		813B9E9CD82A2D9159144777359F76A2 /* Pods-FlashAudio-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudio-resources.sh"; sourceTree = "<group>"; };
+		834AACD3194FE112D7EF455EF7B41B16 /* Pods-FlashAudioTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudioTests-frameworks.sh"; sourceTree = "<group>"; };
+		88D7C1CE85C0F5FA77C54592F3547403 /* FirebaseOSX-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FirebaseOSX-prefix.pch"; sourceTree = "<group>"; };
+		8B78B0034C5D463E88C884554BE16A3C /* Pods-FlashAudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudio.release.xcconfig"; sourceTree = "<group>"; };
+		90BDDB238105C02AFE17BC9BF1A036A3 /* Pods_FlashAudioTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlashAudioTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		914BB983BEBDE6B4665A111BAB12F3D5 /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A6AA0B5784A250DDEFD9E21CD293958 /* Pods-FlashAudioTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlashAudioTests.modulemap"; sourceTree = "<group>"; };
+		9FF540BE0B3BC8B281A3A4E238D8AE32 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00C81245F8ACA49170ADFE404A0B83B /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
+		A3286874F96DB07A4A7B381427AD5D15 /* Pods-FlashAudioUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudioUITests-frameworks.sh"; sourceTree = "<group>"; };
+		AA9E726E4DE531775B399150D14D0644 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7B34CF90D83A3EE338AEE4B5047612 /* Pods-FlashAudioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudioTests.release.xcconfig"; sourceTree = "<group>"; };
+		B8D78B21F0FA15E075C29AA2718BF735 /* Pods-FlashAudioUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlashAudioUITests-umbrella.h"; sourceTree = "<group>"; };
+		C04B90E4A47FD0BEA87A48E15B4AF666 /* Pods-FlashAudioTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlashAudioTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C310DA07751A175B3DC13D353BA406A2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		C688CC32421A698160AA470B1A4D88F3 /* Pods-FlashAudioTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlashAudioTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C6FBE928979923E303E8F7D023BEB4EC /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
+		C83DD49F195A79B88C586113F6C86788 /* Pods-FlashAudio-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlashAudio-dummy.m"; sourceTree = "<group>"; };
+		C9D474885FF713699D8381DFE58C24C1 /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
+		CAE02E947314372F3C106012F1393936 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		D558FFB59DB4125469FC852506C72E51 /* FirebaseOSX.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FirebaseOSX.xcconfig; sourceTree = "<group>"; };
+		D76261687D666CBDCF6F8899C665C44D /* Pods-FlashAudioUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlashAudioUITests-resources.sh"; sourceTree = "<group>"; };
+		DFF8EADE5B440E456DE3FA1105682A5F /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
+		E35B04730A04A65888F2292A9DD6A98A /* Pods-FlashAudioUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlashAudioUITests-dummy.m"; sourceTree = "<group>"; };
+		E96BEEC5EAD617364BE1C23D26750389 /* Pods-FlashAudio-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlashAudio-umbrella.h"; sourceTree = "<group>"; };
+		EAE3BA340105B7F8A4A68FA45BE69E37 /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
+		EF4AA4484F9AFF32C8F7413FD3048664 /* Pods-FlashAudio-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlashAudio-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F075872CF858C5191C34635AB5031B4A /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
+		F33AC859CF60314FBA1DAA9BC711F5F7 /* Pods-FlashAudio-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlashAudio-acknowledgements.plist"; sourceTree = "<group>"; };
+		F6E6FD5B5E3525B30F3C0BCA4863EC0A /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
+		FA9A825A73FFCB684EB0077C31E5063D /* Pods-FlashAudioTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlashAudioTests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EE3C118AFFA8B7136D29AFAD6C6A478 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B0D34CBD9780A35838334D01794D252 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0B21BBE8888EECBF87825BF15C6E1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F406441A6457E6C74DA2396E6DAE4E7D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B2DF8E1E89C498A4969F969FE481F4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80CDDF7906D1F45CF1FBB1608BE61330 /* CFNetwork.framework in Frameworks */,
+				2D826FDE8C54B38573E759145CF495CF /* Cocoa.framework in Frameworks */,
+				4EA8C0EE1C9ECBD68CC35E9BBFB081CE /* Security.framework in Frameworks */,
+				434E206388D6BE912E21305BF27F8634 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7F937E22BB11DED9473CF57FC64BA38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9167933871030CE37A70E07CD6449DBE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9C4C9243F5346C1C8A3D803567ABF1 /* Pods-FlashAudioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52E392062216328CF7BD038B0F18B6C7 /* Info.plist */,
+				3C47CF4167F497A7426B0E58BD4BBE79 /* Pods-FlashAudioUITests.modulemap */,
+				20B90A0422BF40DAD31B5222A0354A24 /* Pods-FlashAudioUITests-acknowledgements.markdown */,
+				3ED31886AD3E99FF396230D44084A50F /* Pods-FlashAudioUITests-acknowledgements.plist */,
+				E35B04730A04A65888F2292A9DD6A98A /* Pods-FlashAudioUITests-dummy.m */,
+				A3286874F96DB07A4A7B381427AD5D15 /* Pods-FlashAudioUITests-frameworks.sh */,
+				D76261687D666CBDCF6F8899C665C44D /* Pods-FlashAudioUITests-resources.sh */,
+				B8D78B21F0FA15E075C29AA2718BF735 /* Pods-FlashAudioUITests-umbrella.h */,
+				35DA032B53ABC69355942C31260FAE9B /* Pods-FlashAudioUITests.debug.xcconfig */,
+				75699652A60444FA6F90560EA71B1901 /* Pods-FlashAudioUITests.release.xcconfig */,
+			);
+			name = "Pods-FlashAudioUITests";
+			path = "Target Support Files/Pods-FlashAudioUITests";
+			sourceTree = "<group>";
+		};
+		40B98A5B38643868C3950324393DC377 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				C310DA07751A175B3DC13D353BA406A2 /* CFNetwork.framework */,
+				074C9681DF8E4BF3D1B9A531D657EB2F /* Cocoa.framework */,
+				4612135DD50E8513C3015931B93811D0 /* Security.framework */,
+				68E47086D8934C5DCD530C6BB016D268 /* SystemConfiguration.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		5170CA11D7F2270C30DA0DA45D4E1E0C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1C65E44175A2E3DFC5D89C5EA077134 /* Pods-FlashAudio */,
+				EE0F210CCB29F7D3E248B1F887087DEB /* Pods-FlashAudioTests */,
+				3B9C4C9243F5346C1C8A3D803567ABF1 /* Pods-FlashAudioUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5CD9D8D7C103725EDBD0076A164B0B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16FE6208CA6E8887646193AAE5C7B39F /* Firebase.framework */,
+				514EBC2275A4AF72F8392BB543EC8904 /* Pods_FlashAudio.framework */,
+				90BDDB238105C02AFE17BC9BF1A036A3 /* Pods_FlashAudioTests.framework */,
+				7E3570D39D314C248B36CFAAABB4D524 /* Pods_FlashAudioUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACDBDA204F01A66D299CA32348ACE47 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBCCCE340EB73142E79338A12580B4D3 /* FirebaseOSX */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				CD75D5B60FCA72FBF7F9C770460B2C26 /* Frameworks */,
+				7ACDBDA204F01A66D299CA32348ACE47 /* Pods */,
+				5CD9D8D7C103725EDBD0076A164B0B0B /* Products */,
+				5170CA11D7F2270C30DA0DA45D4E1E0C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		989C1D7D1E392FBFCE29F64C35BB37DC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20E2DBAABE6BC09CD42671F3A9E80946 /* FirebaseOSX.modulemap */,
+				D558FFB59DB4125469FC852506C72E51 /* FirebaseOSX.xcconfig */,
+				35FF0E736828CABE79913DBF8ACBCD0A /* FirebaseOSX-dummy.m */,
+				88D7C1CE85C0F5FA77C54592F3547403 /* FirebaseOSX-prefix.pch */,
+				42D7644D630F09BE0769C55711B030BC /* FirebaseOSX-umbrella.h */,
+				AA9E726E4DE531775B399150D14D0644 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FirebaseOSX";
+			sourceTree = "<group>";
+		};
+		A3133488F3EE814FE96C3781001FE0DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9D474885FF713699D8381DFE58C24C1 /* libFirebaseStatic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD75D5B60FCA72FBF7F9C770460B2C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40B98A5B38643868C3950324393DC377 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1C65E44175A2E3DFC5D89C5EA077134 /* Pods-FlashAudio */ = {
+			isa = PBXGroup;
+			children = (
+				4E0EFD434F187BC43DA637B354306117 /* Info.plist */,
+				1B53476A77DC151E3DEBCB52160F8F64 /* Pods-FlashAudio.modulemap */,
+				EF4AA4484F9AFF32C8F7413FD3048664 /* Pods-FlashAudio-acknowledgements.markdown */,
+				F33AC859CF60314FBA1DAA9BC711F5F7 /* Pods-FlashAudio-acknowledgements.plist */,
+				C83DD49F195A79B88C586113F6C86788 /* Pods-FlashAudio-dummy.m */,
+				4EDD6752B7DC363524DEF6DBE29B68B6 /* Pods-FlashAudio-frameworks.sh */,
+				813B9E9CD82A2D9159144777359F76A2 /* Pods-FlashAudio-resources.sh */,
+				E96BEEC5EAD617364BE1C23D26750389 /* Pods-FlashAudio-umbrella.h */,
+				25F5A75DC19EBA3D0FA9D94057841058 /* Pods-FlashAudio.debug.xcconfig */,
+				8B78B0034C5D463E88C884554BE16A3C /* Pods-FlashAudio.release.xcconfig */,
+			);
+			name = "Pods-FlashAudio";
+			path = "Target Support Files/Pods-FlashAudio";
+			sourceTree = "<group>";
+		};
+		DBCCCE340EB73142E79338A12580B4D3 /* FirebaseOSX */ = {
+			isa = PBXGroup;
+			children = (
+				CAE02E947314372F3C106012F1393936 /* Empty.m */,
+				45FBE86DF76A4926D70863695EC7BB5A /* FAuthData.h */,
+				1D50288E14575A1501D531A954C7B9FC /* FAuthType.h */,
+				DFF8EADE5B440E456DE3FA1105682A5F /* FConfig.h */,
+				F075872CF858C5191C34635AB5031B4A /* FDataSnapshot.h */,
+				F6E6FD5B5E3525B30F3C0BCA4863EC0A /* FEventType.h */,
+				03777DBF5F1D0E3C9C2CEC2D93244B10 /* Firebase.h */,
+				A00C81245F8ACA49170ADFE404A0B83B /* FirebaseApp.h */,
+				914BB983BEBDE6B4665A111BAB12F3D5 /* FirebaseServerValue.h */,
+				EAE3BA340105B7F8A4A68FA45BE69E37 /* FMutableData.h */,
+				C6FBE928979923E303E8F7D023BEB4EC /* FQuery.h */,
+				36B9FFFFA1E73B073DF66C6878B6FC9C /* FTransactionResult.h */,
+				A3133488F3EE814FE96C3781001FE0DC /* Frameworks */,
+				989C1D7D1E392FBFCE29F64C35BB37DC /* Support Files */,
+			);
+			path = FirebaseOSX;
+			sourceTree = "<group>";
+		};
+		EE0F210CCB29F7D3E248B1F887087DEB /* Pods-FlashAudioTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FF540BE0B3BC8B281A3A4E238D8AE32 /* Info.plist */,
+				9A6AA0B5784A250DDEFD9E21CD293958 /* Pods-FlashAudioTests.modulemap */,
+				C688CC32421A698160AA470B1A4D88F3 /* Pods-FlashAudioTests-acknowledgements.markdown */,
+				FA9A825A73FFCB684EB0077C31E5063D /* Pods-FlashAudioTests-acknowledgements.plist */,
+				397C00998938AD3E46C7866CF8FDA7F5 /* Pods-FlashAudioTests-dummy.m */,
+				834AACD3194FE112D7EF455EF7B41B16 /* Pods-FlashAudioTests-frameworks.sh */,
+				2D9F0016E2B048266DD534B88DAA2E42 /* Pods-FlashAudioTests-resources.sh */,
+				4003A3E54819395DF2DF0F113BF6930D /* Pods-FlashAudioTests-umbrella.h */,
+				C04B90E4A47FD0BEA87A48E15B4AF666 /* Pods-FlashAudioTests.debug.xcconfig */,
+				AB7B34CF90D83A3EE338AEE4B5047612 /* Pods-FlashAudioTests.release.xcconfig */,
+			);
+			name = "Pods-FlashAudioTests";
+			path = "Target Support Files/Pods-FlashAudioTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B78EDB4CBBDA0E191D755F98184282BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC52B2C8DB35026CF9553DE317689FF /* Pods-FlashAudio-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C535DEFA427CA26B0F8D6D8D8019198C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD69D49FEB4824BBB8C4B63547B3574 /* FAuthData.h in Headers */,
+				90205B391F8F1FE5D3A7D24129F5C3BA /* FAuthType.h in Headers */,
+				5BAB8364CEE2D5971EAA62C2AB80C369 /* FConfig.h in Headers */,
+				01637C09A82536FA7D43230152063BAC /* FDataSnapshot.h in Headers */,
+				A6135584C2693A8E5C873DF562EE354F /* FEventType.h in Headers */,
+				56675F1B46B9773698A587E8B61E4438 /* Firebase.h in Headers */,
+				AA03D827681FE78C8E8F2DBDDDEC9733 /* FirebaseApp.h in Headers */,
+				0499F99FA631186EA0A1B40CAFF125CD /* FirebaseOSX-umbrella.h in Headers */,
+				B5752F5D14F43E06854A45FCE0AD1141 /* FirebaseServerValue.h in Headers */,
+				A8861244CE6E7AC8EB2E0EBE7BA8E856 /* FMutableData.h in Headers */,
+				58F410D23A9D5AD0BA112738D6F7C7E1 /* FQuery.h in Headers */,
+				DDF7F17F6A80835F4AE19C5EAE543204 /* FTransactionResult.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E127F04E8BF7E92486FA21E46E22A05A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EBB32437991D0FF0F83C8146241A9EC /* Pods-FlashAudioTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F924BF87D5F1A63683BA8DDD5925B6A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B20468A9640A1C3B3146A16A0EAB8A3 /* Pods-FlashAudioUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		557CE3709EC2652DDC12B7A49558A43B /* FirebaseOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BD89A60076E868AA12E645920A5BEFE /* Build configuration list for PBXNativeTarget "FirebaseOSX" */;
+			buildPhases = (
+				A612F1F69DF0803F6080B479EFA2BCD3 /* Sources */,
+				9B2DF8E1E89C498A4969F969FE481F4D /* Frameworks */,
+				C535DEFA427CA26B0F8D6D8D8019198C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirebaseOSX;
+			productName = FirebaseOSX;
+			productReference = 16FE6208CA6E8887646193AAE5C7B39F /* Firebase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		99E19A0BB07113C0F56454064F0A842B /* Pods-FlashAudioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D89515B88F06413563C0CBEBD168DA /* Build configuration list for PBXNativeTarget "Pods-FlashAudioUITests" */;
+			buildPhases = (
+				C4C1182FF54FE0D4E68DBD12C6879B71 /* Sources */,
+				6D0B21BBE8888EECBF87825BF15C6E1C /* Frameworks */,
+				F924BF87D5F1A63683BA8DDD5925B6A2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FlashAudioUITests";
+			productName = "Pods-FlashAudioUITests";
+			productReference = 7E3570D39D314C248B36CFAAABB4D524 /* Pods_FlashAudioUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A2E6B1E97B97DEC4D3C82732A8914BD6 /* Pods-FlashAudio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 710E9F998C68DB020C095629B9A14C59 /* Build configuration list for PBXNativeTarget "Pods-FlashAudio" */;
+			buildPhases = (
+				9C30364D291630E29BD392784DB9759B /* Sources */,
+				2EE3C118AFFA8B7136D29AFAD6C6A478 /* Frameworks */,
+				B78EDB4CBBDA0E191D755F98184282BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF32AAC35F5A3E50A311DC1C36A8594E /* PBXTargetDependency */,
+			);
+			name = "Pods-FlashAudio";
+			productName = "Pods-FlashAudio";
+			productReference = 514EBC2275A4AF72F8392BB543EC8904 /* Pods_FlashAudio.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BC956C0CDC175B3E503E1FDBD3BBD134 /* Pods-FlashAudioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 967F87954B11AF28A014D0CAAF10A47A /* Build configuration list for PBXNativeTarget "Pods-FlashAudioTests" */;
+			buildPhases = (
+				122BE6C75FBDA7853D9ACC9F6A607471 /* Sources */,
+				D7F937E22BB11DED9473CF57FC64BA38 /* Frameworks */,
+				E127F04E8BF7E92486FA21E46E22A05A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E78DF047857965481B89E63B91CF1B9B /* PBXTargetDependency */,
+			);
+			name = "Pods-FlashAudioTests";
+			productName = "Pods-FlashAudioTests";
+			productReference = 90BDDB238105C02AFE17BC9BF1A036A3 /* Pods_FlashAudioTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5CD9D8D7C103725EDBD0076A164B0B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557CE3709EC2652DDC12B7A49558A43B /* FirebaseOSX */,
+				A2E6B1E97B97DEC4D3C82732A8914BD6 /* Pods-FlashAudio */,
+				BC956C0CDC175B3E503E1FDBD3BBD134 /* Pods-FlashAudioTests */,
+				99E19A0BB07113C0F56454064F0A842B /* Pods-FlashAudioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		122BE6C75FBDA7853D9ACC9F6A607471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCADE0EB76DA35A5A140A68DC5AA5A21 /* Pods-FlashAudioTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C30364D291630E29BD392784DB9759B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814A11F33FEED54FEC78D27F6D465471 /* Pods-FlashAudio-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A612F1F69DF0803F6080B479EFA2BCD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C89674A09272752A1D2FCFB1136129 /* Empty.m in Sources */,
+				81BD111833EC11EC163B2A8147EE3DC3 /* FirebaseOSX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4C1182FF54FE0D4E68DBD12C6879B71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84548F98A8A507CDC0087C9CB0F060B5 /* Pods-FlashAudioUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF32AAC35F5A3E50A311DC1C36A8594E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseOSX;
+			target = 557CE3709EC2652DDC12B7A49558A43B /* FirebaseOSX */;
+			targetProxy = 78FBE97B9BDB5844E0CD279B5F5B08CC /* PBXContainerItemProxy */;
+		};
+		E78DF047857965481B89E63B91CF1B9B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FirebaseOSX;
+			target = 557CE3709EC2652DDC12B7A49558A43B /* FirebaseOSX */;
+			targetProxy = 5C0B1722A44A67BC44D27FE2381B2A54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01B5C824F289A62E1FDC7737F8D1C0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04B90E4A47FD0BEA87A48E15B4AF666 /* Pods-FlashAudioTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudioTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudioTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0577E960F68FF02722D75DA2D211E3A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1BCF205D3362E42B221782C0CB1D9FEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75699652A60444FA6F90560EA71B1901 /* Pods-FlashAudioUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudioUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudioUITests/Pods-FlashAudioUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudioUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		578820E498FFD85CA5D93A33D365FBED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		72230DC55C32F377AC21DC71F8404830 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25F5A75DC19EBA3D0FA9D94057841058 /* Pods-FlashAudio.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudio/Pods-FlashAudio.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudio;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F1DCD107AFCB4769B2B9742254500D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B78B0034C5D463E88C884554BE16A3C /* Pods-FlashAudio.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudio/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudio/Pods-FlashAudio.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudio;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AA7B13D1CE6D91EF048A8FDEE829DCA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D558FFB59DB4125469FC852506C72E51 /* FirebaseOSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FirebaseOSX/FirebaseOSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FirebaseOSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/FirebaseOSX/FirebaseOSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Firebase;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BCB6A29D2B66636C0AF3EE256656D9DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35DA032B53ABC69355942C31260FAE9B /* Pods-FlashAudioUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudioUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudioUITests/Pods-FlashAudioUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudioUITests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D5748B84FCFB421417EAD9AEB4540B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB7B34CF90D83A3EE338AEE4B5047612 /* Pods-FlashAudioTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FlashAudioTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlashAudioTests/Pods-FlashAudioTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FlashAudioTests;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7878A6905F4048F2224891358017D28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D558FFB59DB4125469FC852506C72E51 /* FirebaseOSX.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FirebaseOSX/FirebaseOSX-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FirebaseOSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/FirebaseOSX/FirebaseOSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Firebase;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D89515B88F06413563C0CBEBD168DA /* Build configuration list for PBXNativeTarget "Pods-FlashAudioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCB6A29D2B66636C0AF3EE256656D9DB /* Debug */,
+				1BCF205D3362E42B221782C0CB1D9FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0577E960F68FF02722D75DA2D211E3A8 /* Debug */,
+				578820E498FFD85CA5D93A33D365FBED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		710E9F998C68DB020C095629B9A14C59 /* Build configuration list for PBXNativeTarget "Pods-FlashAudio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72230DC55C32F377AC21DC71F8404830 /* Debug */,
+				7F1DCD107AFCB4769B2B9742254500D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		967F87954B11AF28A014D0CAAF10A47A /* Build configuration list for PBXNativeTarget "Pods-FlashAudioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B5C824F289A62E1FDC7737F8D1C0FD /* Debug */,
+				D5748B84FCFB421417EAD9AEB4540B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BD89A60076E868AA12E645920A5BEFE /* Build configuration list for PBXNativeTarget "FirebaseOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7B13D1CE6D91EF048A8FDEE829DCA7 /* Debug */,
+				F7878A6905F4048F2224891358017D28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
